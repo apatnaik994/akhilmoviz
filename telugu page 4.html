@@ -1,0 +1,1103 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+
+
+
+
+
+.header {
+  overflow: hidden;
+  background-color: #cfb0b0ad;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+
+
+url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: ;
+	display: ;
+	align-items: ;
+	justify-content: ;
+	height: 100vh;
+	margin: 0;
+	transition: background 0.2s linear;
+
+ background-image: url("https://images.pexels.com/photos/462030/pexels-photo-462030.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" );
+
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+        *{
+  margin:0;
+  padding:0;
+}
+body {
+	font-family: Helvetica, Arial, sans-serif;
+  font-size:16px;
+}
+.mobile-menu {
+  display:block;
+  width:100%;
+height:7%;
+background: #e94e1b/*e0b88f/*c99393/*e5d1a4/*dcc591/*EFD3A3*/;
+line-height: 1.6em;
+font-weight: 400;
+width:100%;
+text-align:center;
+	position: relative;
+  margin:0 auto;
+}
+/*Strip the ul of padding and list styling*/
+.mobile-menu ul {
+	list-style-type:none;
+  margin: 0 auto;
+  padding-left:0;
+  text-align:center;
+  width:100%;
+  position: absolute;
+  background: #8aa8bd;
+}
+
+/*Create a horizontal list with spacing*/
+.mobile-menu li {
+	display:inline-block;
+	/*float: left;
+	margin-right: 1px;*/
+}
+
+/*Style for menu links*/
+.mobile-menu li a {
+	display:block;
+	min-width:140px;
+	text-align: center;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #fff;
+  text-transform:uppercase;
+	background: #8aa8bd;
+	text-decoration: none;
+  margin-left:-5px;
+  padding: 10px 0;  
+-webkit-transition: all 0.4s ease 0s;
+-moz-transition: all 0.4s ease 0s;
+-ms-transition: all 0.4s ease 0s;
+-o-transition: all 0.4s ease 0s;
+transition: all 0.4s ease 0s;
+}
+
+/*Hover state for top level links*/
+.mobile-menu li:hover a {
+	color: #4db3ff;
+  background-color:#ccddee;
+}
+
+/*Style for dropdown links*/
+.mobile-menu li:hover ul a {
+	background: #f3f3f3;
+	color: #2f3036;
+	height: 40px;
+	line-height: 40px;
+}
+
+/*Hover state for dropdown links*/
+.mobile-menu li:hover .mobile-menu ul a:hover {
+	color: #4db3ff;
+}
+
+/*Hide dropdown links until they are needed*/
+.mobile-menu li ul {
+	display: none;
+}
+
+/*Make dropdown links vertical*/
+.mobile-menu li ul li {
+	display: block;
+	float: none;
+}
+
+/*Prevent text wrapping*/
+.mobile-menu li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+
+/*Style 'show menu' label button and hide it by default*/
+.mobile-menu .show-menu {
+	text-decoration: none;
+	color: #fff;
+	background: #8aa8bd;
+	text-align: center;
+	padding: 10px 15px;
+	display: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.mobile-menu .show-menu span{
+   padding-left: 25px;
+}
+
+/*Hide checkbox*/
+.mobile-menu input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+.mobile-menu input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+/*Responsive Styles*/
+
+@media screen and (max-width : 800px){
+  .mobile-menu .lines {
+    border-bottom: 15px double #f8f8f8; 
+    border-top: 5px solid #f8f8f8; 
+    content:"";
+    height: 5px; 
+    width:20px;
+    padding-right:15px;
+  float: right;
+}
+	/*Make dropdown links appear inline*/
+	.mobile-menu ul {
+		position: static;
+		display: none;
+	}
+	/*Create vertical spacing*/
+	.mobile-menu li {
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+	.mobile-menu ul li, .mobile-menu li a {
+		width: 100%;
+	}
+	/*Display 'show menu' link*/
+	.mobile-menu .show-menu {
+		display:block;
+	}
+}
+        
+
+
+
+.twitter {
+  font: normal normal 10px Arial;
+  text-align: center;
+  color: #998578;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.twitter {
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  padding: 14px;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.twitter:hover {
+  color: #FF7D6D;
+  text-decoration: none;
+}
+
+span {
+  font-style: italic;
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+/* Floating Social Media Bar Style Starts Here */
+
+.fl-fl {
+  background: #000000;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 4px;
+  width: 190px;
+  position: fixed;
+  right: -160px;
+  z-index: 1000;
+  font: normal normal 10px Arial;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.fa {
+  font-size: 20px;
+  color: #fff;
+  padding: 10px 0;
+  width: 40px;
+  margin-left: 8px;
+}
+
+.fl-fl:hover {
+  right: 0;
+}
+
+.fl-fl a {
+  color: #fff !important;
+  text-decoration: none;
+  text-align: center;
+  line-height: 43px!important;
+  vertical-align: top!important;
+}
+
+.float-fb {
+  top: 320px;
+}
+
+.float-tw {
+  top: 420px;
+}
+
+.float-gp {
+  top: 520px;
+}
+
+
+/* Floating Social Media Bar Style Ends Here */
+
+
+
+
+
+
+.button {
+  border: none;
+  color: #cfb0b0ad;
+  padding: 11px 29px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+ 
+
+url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #e7d9b9;
+	display: ;
+	align-items: ;
+	justify-content: ;
+	height: 100vh;
+	margin: 0;
+	transition: background 0.42s linear;
+}
+
+body.dark {
+	background: #292C35;
+}
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+	background-color: #111;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: ;
+	justify-content: ;
+	padding: 5px;
+	position: relative;
+	height: 20px;
+	width: 40px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: a76bcf;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 20px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+
+.fa-moon {
+	color: #f1c40f;
+}
+
+.fa-sun {
+	color: #f39c12;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+div.gallery {
+  border: 2px solid #ccc;
+
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 8px;
+  text-align: center;
+color:white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 47.99999%;
+    margin: 3px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+height:30px;
+   background-color: red;
+   color: white;
+   text-align: center;
+}
+
+
+
+.progress-container {
+  width: 100%;
+  height: 5px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 5px;
+  background: #4caf50;
+  width: 0%;
+}
+
+
+
+
+</style>
+
+<link rel="icon" href="logo2.gif" type="image/png" sizes="16x16">
+	
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/130527/h5ab-snow-flurry.js"></script>
+
+
+
+</head>
+<body >
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+<div style= "background-color:#aaf2f154;height:40px";>
+<marquee behavior="alternate">
+<p style="font-family:courier;"> 𝒲𝑒𝓁𝒸𝑜𝓂𝑒 𝓉𝑜<b> Hollywood movies </b></p></marquee>
+		<div class="header2">
+
+
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>  
+</div>
+	
+ </div>
+
+
+
+
+<div class="header">
+
+<div>
+	<input type="checkbox" class="checkbox" id="chk" />
+	<label class="label" for="chk">
+		<i class="fas fa-moon"></i>
+		<i class="fas fa-sun"></i>
+		<div class="ball"></div>
+	</label>
+<p style= "font-size: 7">CLICK TO ACTIVATE DARK MODE</p>
+</div>
+
+
+
+
+
+<center>
+  <img src="logo2.gif" class="logo"width="300px"height="110px"></center>
+
+
+
+
+
+</div>
+
+<nav class="mobile-menu">
+<label for="show-menu" class="show-menu"><img src="iconn.png" alt="Snow"style="width:27px;height:29px"align="right"><h4>Menu</h4><div class="line"></div></label>
+	<input type="checkbox" id="show-menu">
+		<ul id="menu">
+		<li><a href="index2.html">Home</a></li>
+		<li>			<a href="about.html">About</a></li>
+	
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
+</nav>
+
+<pre>
+
+
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+const chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('dark');
+});
+
+</script>
+
+
+
+
+
+<div style= "background-color:#aaf2f154;height:55px";>
+    <script>  
+    var welcome;  
+    var date = new Date();  
+    var hour = date.getHours();  
+    var minute = date.getMinutes();  
+    var second = date.getSeconds();  
+    if (minute < 10) {  
+      minute = "0" + minute;  
+    }  
+    if (second < 10) {  
+      second = "0" + second;  
+    }  
+    if (hour < 12) {  
+      welcome = "Good morning visitors...";  
+    } else if (hour < 17) {  
+      welcome = "Good afternoon visitors...";  
+    } else {  
+      welcome = "Good evening visitors...";  
+    }  
+    document.write("<h2>" + "<font color='#85144b'>" + welcome + "</font>" + " ");  
+    document.write("<br>" + hour + ":" + minute + ":" + second);  
+    </script>  
+ </div>
+
+
+<pre>
+
+</pre>
+
+	<div style= "background-color:#aaf2f154;height:50px";><pre>
+	</pre>
+		<marquee>
+<h4><b>NOTE: Guys if any movie is not open then you just mail me.. my mail id is akhilmovies1@gmail.com it will be updated soon</b></h4></marquee>
+</div>
+	
+	<pre>
+	
+	</pre>
+
+
+
+	<div class="responsive">
+  <div class="gallery">
+    <a target="_blank"  href="https://www.y2mate.com/youtube/sqW95LOMrBU
+">
+      <img src="NL.jpg" alt="nl" width="500" height="300">
+    </a>
+    <div class="desc"> NENU LOCAl</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank"  href="https://www.y2mate.com/youtube/kAw1q5ywIsY
+">
+      <img src="raceg.jpg" alt="RG" width="500" height="300">
+    </a>
+    <div class="desc">RACEGURRAM </div>
+  </div>
+</div>
+
+	
+	<div class="responsive">
+  <div class="gallery">
+    <a target="_blank"  href="http://www.jiorockerss.pw/files/Telugu%20Movies/Telugu%202019%20Movies/Arjun%20Suravaram%20(2019)%20Telugu%20Proper%20HDRip/Arjun%20Suravaram%20Telugu%20Proper%20HDRip%20Single%20Part/Arjun%20Suravaram%20(2019)%20Telugu%20Proper%20HDRip%20Single%20Part.mp4
+">
+      <img src="as.jpg" alt="as" width="500" height="300">
+    </a>
+    <div class="desc"> ARJUN SURVARAM </div>
+  </div>
+</div>
+	
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank"  href="https://vidoza.net/i6pzgj5mz1hf.html">
+      <img src="tenali.jpg" alt="TR" width="500" height="300">
+    </a>
+    <div class="desc">TENALI RAMA KRISHNA  </div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="http://www.jiorockers.ws/files/Telugu%20Movies/Telugu%202019%20Movies/George%20Reddy%20(2019)%20Telugu%20Proper%20HDRip/George%20Reddy%20Telugu%20Proper%20HDRip%20Single%20Part/George%20Reddy%20(2019)%20Telugu%20Proper%20HDRip%20Single%20Part.mp4">
+      <img src="george reddy.jpg" alt="GR" width="500" height="300">
+    </a>
+    <div class="desc">GEORGE REDDY  </div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank"  href="http://www.kothamovies.fun/files/Telugu%20Movies/Telugu%202019%20Movies/Prati%20Roju%20Pandaage%20(2019)%20Proper%20HDRip/Prati%20Roju%20Pandaage%20Telugu%20Proper%20HDRip%20Single%20Part.mp4">
+      <img src="pp.jpg" alt="PP" width="500" height="300">
+    </a>
+    <div class="desc">PRATIROJU PANDAGE</div>
+  </div>
+</div>
+
+	
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank"  href="https://etcrips.to/?p=23148">
+      <img src="aravinda sameta.jpg" alt="as" width="500" height="300">
+    </a>
+    <div class="desc">ARAVINDA SAMETHA</div>
+  </div>
+</div>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <pre>
+  
+  </pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+
+
+const chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('dark');
+});
+
+</script>
+
+
+<pre>
+
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Floating Social Media bar Starts -->
+<div class="float-sm">
+  <div class="fl-fl float-fb">
+    <i class="fa fa-facebook"></i>
+    <a href="" target="_blank"> Follow on FaceBook!</a>
+  </div>
+  <div class="fl-fl float-tw">
+    <i class="fa fa-twitter"></i>
+    <a href="" target="_blank">Follow on Twitter!</a>
+  </div>
+  <div class="fl-fl float-gp">
+    <i class="fa fa-google-plus"></i>
+    <a href="" target="_blank">review us on Gmail!</a>
+  </div>
+  
+</div>
+<!-- Floating Social Media bar Ends -->
+
+
+
+<style>
+  #snowflakeContainer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: none;
+  }
+
+  .snowflake {
+    position: fixed;
+    background-color: #CCC;
+    user-select: none;
+    z-index: 1000;
+    pointer-events: none;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+  }
+</style>
+
+<div id="snowflakeContainer">
+  <span class="snowflake"></span>
+</div>
+
+<script>
+  // Array to store our Snowflake objects
+  var snowflakes = [];
+
+  // Global variables to store our browser's window size
+  var browserWidth;
+  var browserHeight;
+
+  // Specify the number of snowflakes you want visible
+  var numberOfSnowflakes = 50;
+
+  // Flag to reset the position of the snowflakes
+  var resetPosition = false;
+
+  // Handle accessibility
+  var enableAnimations = false;
+  var reduceMotionQuery = matchMedia("(prefers-reduced-motion)");
+
+  // Handle animation accessibility preferences 
+  function setAccessibilityState() {
+    if (reduceMotionQuery.matches) {
+      enableAnimations = false;
+    } else { 
+      enableAnimations = true;
+    }
+  }
+  setAccessibilityState();
+
+  reduceMotionQuery.addListener(setAccessibilityState);
+
+  //
+  // It all starts here...
+  //
+  function setup() {
+    if (enableAnimations) {
+      window.addEventListener("DOMContentLoaded", generateSnowflakes, false);
+      window.addEventListener("resize", setResetFlag, false);
+    }
+  }
+  setup();
+
+  //
+  // Constructor for our Snowflake object
+  //
+  function Snowflake(element, speed, xPos, yPos) {
+    // set initial snowflake properties
+    this.element = element;
+    this.speed = speed;
+    this.xPos = xPos;
+    this.yPos = yPos;
+    this.scale = 1;
+
+    // declare variables used for snowflake's motion
+    this.counter = 0;
+    this.sign = Math.random() < 0.5 ? 1 : -1;
+
+    // setting an initial opacity and size for our snowflake
+    this.element.style.opacity = (.1 + Math.random()) / 3;
+  }
+
+  //
+  // The function responsible for actually moving our snowflake
+  //
+  Snowflake.prototype.update = function () {
+    // using some trigonometry to determine our x and y position
+    this.counter += this.speed / 5000;
+    this.xPos += this.sign * this.speed * Math.cos(this.counter) / 40;
+    this.yPos += Math.sin(this.counter) / 40 + this.speed / 30;
+    this.scale = .5 + Math.abs(10 * Math.cos(this.counter) / 20);
+
+    // setting our snowflake's position
+    setTransform(Math.round(this.xPos), Math.round(this.yPos), this.scale, this.element);
+
+    // if snowflake goes below the browser window, move it back to the top
+    if (this.yPos > browserHeight) {
+      this.yPos = -50;
+    }
+  }
+
+  //
+  // A performant way to set your snowflake's position and size
+  //
+  function setTransform(xPos, yPos, scale, el) {
+    el.style.transform = `translate3d(${xPos}px, ${yPos}px, 0) scale(${scale}, ${scale})`;
+  }
+
+  //
+  // The function responsible for creating the snowflake
+  //
+  function generateSnowflakes() {
+
+    // get our snowflake element from the DOM and store it
+    var originalSnowflake = document.querySelector(".snowflake");
+
+    // access our snowflake element's parent container
+    var snowflakeContainer = originalSnowflake.parentNode;
+    snowflakeContainer.style.display = "block";
+
+    // get our browser's size
+    browserWidth = document.documentElement.clientWidth;
+    browserHeight = document.documentElement.clientHeight;
+
+    // create each individual snowflake
+    for (var i = 0; i < numberOfSnowflakes; i++) {
+
+      // clone our original snowflake and add it to snowflakeContainer
+      var snowflakeClone = originalSnowflake.cloneNode(true);
+      snowflakeContainer.appendChild(snowflakeClone);
+
+      // set our snowflake's initial position and related properties
+      var initialXPos = getPosition(50, browserWidth);
+      var initialYPos = getPosition(50, browserHeight);
+      var speed = 5 + Math.random() * 40;
+
+      // create our Snowflake object
+      var snowflakeObject = new Snowflake(snowflakeClone,
+        speed,
+        initialXPos,
+        initialYPos);
+      snowflakes.push(snowflakeObject);
+    }
+
+    // remove the original snowflake because we no longer need it visible
+    snowflakeContainer.removeChild(originalSnowflake);
+
+    moveSnowflakes();
+  }
+
+  //
+  // Responsible for moving each snowflake by calling its update function
+  //
+  function moveSnowflakes() {
+
+    if (enableAnimations) {
+      for (var i = 0; i < snowflakes.length; i++) {
+        var snowflake = snowflakes[i];
+        snowflake.update();
+      }      
+    }
+
+    // Reset the position of all the snowflakes to a new value
+    if (resetPosition) {
+      browserWidth = document.documentElement.clientWidth;
+      browserHeight = document.documentElement.clientHeight;
+
+      for (var i = 0; i < snowflakes.length; i++) {
+        var snowflake = snowflakes[i];
+
+        snowflake.xPos = getPosition(50, browserWidth);
+        snowflake.yPos = getPosition(50, browserHeight);
+      }
+
+      resetPosition = false;
+    }
+
+    requestAnimationFrame(moveSnowflakes);
+  }
+
+  //
+  // This function returns a number between (maximum - offset) and (maximum + offset)
+  //
+  function getPosition(offset, size) {
+    return Math.round(-1 * offset + Math.random() * (size + 2 * offset));
+  }
+
+  //
+  // Trigger a reset of all the snowflakes' positions
+  //
+  function setResetFlag(e) {
+    resetPosition = true;
+  }
+</script>
+<pre>
+
+</pre>
+
+	
+	
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
+
+	
+	
+	
+<div class="footer">
+  <p>SITE BY AKHIL</p>
+</div>
+
+
+
+</body>
+</html>
